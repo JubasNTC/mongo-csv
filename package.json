@@ -1,0 +1,39 @@
+{
+  "name": "mongo-csv",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node ./dist/index.js",
+    "build": "tsc --alwaysStrict",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JubasNTC/mongo-csv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JubasNTC/mongo-csv/issues"
+  },
+  "homepage": "https://github.com/JubasNTC/mongo-csv#readme",
+  "dependencies": {
+    "eslint": "^8.2.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
+  },
+  "lint-staged": {
+    "*.{js, ts}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
