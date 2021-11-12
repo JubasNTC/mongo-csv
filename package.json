@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node ./dist/index.js",
+    "start": "npm run build && node ./dist/index.js --url=$URL",
     "build": "tsc --alwaysStrict",
     "precommit": "lint-staged"
   },
@@ -20,9 +20,16 @@
   },
   "homepage": "https://github.com/JubasNTC/mongo-csv#readme",
   "dependencies": {
-    "eslint": "^8.2.0"
+    "csv-parser": "^3.0.0",
+    "dotenv": "^10.0.0",
+    "eslint": "^8.2.0",
+    "googleapis": "^91.0.0",
+    "minimist": "^1.2.5",
+    "mongodb": "^4.1.4"
   },
   "devDependencies": {
+    "@types/minimist": "^1.2.2",
+    "@types/mongodb": "^4.0.7",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
