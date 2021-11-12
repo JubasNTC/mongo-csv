@@ -69,6 +69,7 @@ const { url } = argv(process.argv.slice(2));
     console.info('======= reading files and inserting data =======');
 
     // TODO: Put it in a separate function
+    // TODO: Make a bulk insert
 
     await new Promise((resole, reject) => {
       fs.createReadStream(moviesDestination)
@@ -130,7 +131,7 @@ const { url } = argv(process.argv.slice(2));
         },
       ])
       .sort({ rating: -1 })
-      .limit(5)
+      .limit(10)
       .toArray();
 
     console.dir(
