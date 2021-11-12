@@ -32,6 +32,7 @@ The data for .env can be taken from these links
 https://console.cloud.google.com/apis/credential
 https://developers.google.com/oauthplayground/
 ```
+Select all points for work with google drive in oauthplayground.
 
 ### Build and run
 
